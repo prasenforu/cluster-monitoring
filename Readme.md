@@ -131,6 +131,10 @@ If you get an error from applying the manifests, run the `make deploy` or `kubec
 
 If you enable the SMTP relay for Gmail in `vars.jsonnet`, the pod will be in an error state after deployed since it would not find the user and password on the "smtp-account" secret. To generate, run the `scripts/create_gmail_auth.sh` script.
 
+Modify grafana.ini
+
+https://github.com/carlosedp/cluster-monitoring/issues/57
+
 ## Ingress
 
 Now you can open the applications:
